@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Easy Apply Bot",
+  "version": "1.0",
+  "permissions": ["scripting", "storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/jobs/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Apply Bot"
+  }
+}
